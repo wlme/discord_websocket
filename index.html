@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord WS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"/>
+        <style>
+            table, tr, td {
+                vertical-align: middle !important;
+            }
+            #chatbox .avatar {
+                height: 24px;
+                border-radius: 50%;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./ws_remake.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-7 mt-5">
+                    <table class="table table-sm table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">Usuario</th>
+                                <th style="width: 50%;">Mensaje</th>
+                                <th style="width: 25%;">Timestamp</th>
+                            </tr>
+                        </thead>
+                        <tbody id="chatbox">
+                        </tbody>
+                    </table>            
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
