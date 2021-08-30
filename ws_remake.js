@@ -3,14 +3,23 @@ $(function(){
 })
 
 var ws = {
-
-    bot_token: 'NzYwODc5MTI5MzQzNjg4NzA1.X3Sd6A.44JgJd1DTPR6g9NvvhPuPLBm5_s',
+    bot_token: '',
     gateway_url:  'wss://gateway.discord.gg/?v=6&encoding=json',
     send_ready: false,
     contact_owner: false,
 
     init: function() {
-        ws.connect();
+        ws.getToken();
+    },
+    
+    getToken: function() {
+        var token = prompt("Pega el token de tu bot aquí");
+        if(token.trim().length > 0) {
+            ws.bot_token = token;
+            ws.connect();
+        } else {
+            ws.getToken();
+        }
     },
 
     connect: function() {
@@ -21,11 +30,15 @@ var ws = {
 
     login: function() {
         data = {
-            "op": 2,
-            "d": {
-                "token": ws.bot_token,
-                "properties": { "$os": "browser", "$browser": "chrome", "$device": "cloud9" },
-                "compress": false
+            "op" : 2,
+            "d" : {
+                "token" : ws.bot_token,
+                "properties" : {
+                    "$os" : "browser",
+                    "$browser" : "chrome",
+                    "$device" : "cloud9"
+                },
+                "compress" : false
             }
         };
 
