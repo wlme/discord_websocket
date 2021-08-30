@@ -17,4 +17,4 @@ Este es un paso requerido para que nuestro bot pueda enviar mensajes.
 > 3. Acceder [aquí](https://wlme.github.io/discord_websocket)
 > 4. Pegar el token del bot y hacer clic en aceptar.
 > 5. Aguarda a que el bot aparezca `En Línea` y, puedes escribir mensajes en cualquier canal que el bot pueda leer, en el sitio te aparecerán los mensajes.
-> 6. Listo! Tu bot ya se ha conectao al websocket. Este procedimiento es requerido aunque sea una vez, para poder enviar mensajes/contenido a través de nuestro bot.
+> 6. Listo! Tu bot ya se ha conectado al websocket. Este procedimiento es requerido aunque sea una vez, para poder enviar mensajes/contenido a través de nuestro bot.
